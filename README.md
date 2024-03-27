@@ -32,3 +32,5 @@ yay -S simplenote-electron-bin
 
 
 sudo pacman -S mongodb
+
+https://flathub.org/apps/de.uni_heidelberg.zah.GaiaSky
