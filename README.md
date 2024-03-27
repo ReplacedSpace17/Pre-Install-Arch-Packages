@@ -23,6 +23,8 @@ flatpak install flathub org.onlyoffice.desktopeditors
 sudo pacman -S postgresql
 sudo systemctl start postgresql
 sudo systemctl enable postgresql
+En su:
+su -l postgres -c "initdb --locale=C.UTF-8 --encoding=UTF8 -D '/var/lib/postgres/data'"
 
 
 
