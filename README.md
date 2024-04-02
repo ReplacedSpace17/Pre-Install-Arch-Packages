@@ -15,7 +15,7 @@ sudo pacman -S gphoto2 v4l2loopback-utils ffmpeg
 sudo modprobe v4l2loopback exclusive_caps=1 max_buffer=2
 gphoto2 --auto-detect
 #iniciar la camara
-gphoto2 --stdout --capture-moviie | ffmpeg -l - -vcodec rawvideo -pix_fmt yuv420p -threads 0 -f v4l2 /dev/video0
+gphoto2 --stdout --capture-movie | ffmpeg -i - -vcodec rawvideo -pix_fmt yuv420p -threads 0 -f v4l2 /dev/video0
 
 
 flatpak install flathub org.onlyoffice.desktopeditors
